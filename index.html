@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MamaPutOnline - Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for the search icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <!-- Logo Section -->
+        <div class="logo">
+            <span class="logo-mama">Mama</span><span class="logo-put">Put</span><span class="logo-online">Online</span>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li class="dropdown">
+                <a href="#products">Products <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#swallows">Soups & Swallows</a></li>
+                    <li><a href="#rice">Rice Dishes</a></li>
+                    <li><a href="#sides">Sides & Small Chops</a></li>
+                    <li><a href="#drinks">Drinks</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#delivery">Doorstep Delivery</a></li>
+                    <li><a href="#catering">Event Catering</a></li>
+                    <li><a href="#bulk">Bulk Orders</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#customer-service">Customer Service <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#track">Track Order</a></li>
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#refunds">Refund Policy</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+
+        <!-- Search Window -->
+        <div class="search-container">
+            <form action="/search">
+                <input type="text" placeholder="Search for Jollof, Suya..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <!-- Place this right under your </nav> tag -->
+<header class="hero">
+    <!-- Left Side: Text and Call to Action -->
+    <div class="hero-content">
+        <h1>Dive Into Delicious <br><span class="highlight">Meal Dishes</span></h1>
+        <p>Experience the authentic taste of premium, freshly cooked Nigerian delicacies delivered straight to your doorstep.</p>
+        <a href="#menu" class="cta-button">Order Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+
+    <!-- Right Side: Steaming Food Image Showcase -->
+    <div class="hero-image-container">
+        <!-- We use a high-quality placeholder image of Nigerian Egusi/Jollof. You can swap the URL with your own local image path later -->
+        <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=1000" alt="Delicious Cooked Nigerian Dish" class="hero-image">
+        <div class="steam-effect"></div>
+    </div>
+</header>
+<!-- Place this right under your </header> tag -->
+<main class="main-container">
+    
+    <!-- Left Side Panel (Category Navigation) -->
+    <aside class="side-panel">
+        <h3>Categories</h3>
+        <ul class="category-links">
+            <li><a href="#rice-dishes" class="active"><i class="fas fa-bowl-rice"></i> Rice Specialties</a></li>
+            <li><a href="#soups-swallows"><i class="fas fa-pot"></i> Soups & Swallows</a></li>
+            <li><a href="#sides-chops"><i class="fas fa-hotdog"></i> Sides & Small Chops</a></li>
+        </ul>
+    </aside>
+
+    <!-- Right Content Area (Product Showcase) -->
+    <section class="products-display">
+        
+        <!-- ROW 1: Rice Specialties -->
+        <div id="rice-dishes" class="product-row-section">
+            <h2 class="row-title">Rice Specialties</h2>
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&q=80&w=400" alt="Smokey Jollof Rice" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Smokey Jollof Rice</h4>
+                        <p class="product-qty">Serving: 1 Pack (with Chicken)</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦4,500</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&q=80&w=400" alt="Special Fried Rice" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Native Fried Rice</h4>
+                        <p class="product-qty">Serving: 1 Pack (with Prawns)</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦5,000</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=400" alt="White Rice & Ayamase" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Ofada Rice & Sauce</h4>
+                        <p class="product-qty">Serving: 1 Designer Wrap</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦5,500</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&q=80&w=400" alt="Coconut Rice" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Creamy Coconut Rice</h4>
+                        <p class="product-qty">Serving: 1 Pack (with Fish)</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦4,800</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 2: Soups & Swallows -->
+        <div id="soups-swallows" class="product-row-section">
+            <h2 class="row-title">Soups & Swallows</h2>
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&q=80&w=400" alt="Egusi Soup" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Special Egusi Soup</h4>
+                        <p class="product-qty">Qty: 1 Litre Container</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦8,500</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&q=80&w=400" alt="Efo Riro" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Efo Riro (Vegetable)</h4>
+                        <p class="product-qty">Qty: 1 Litre Container</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦9,000</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?auto=format&fit=crop&q=80&w=400" alt="Pounded Yam" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Premium Pounded Yam</h4>
+                        <p class="product-qty">Qty: 1 Standard Wrap</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦1,200</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80&w=400" alt="Afang Soup" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Rich Afang Soup</h4>
+                        <p class="product-qty">Qty: 1 Litre Container</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦9,500</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ROW 3: Sides & Small Chops -->
+        <div id="sides-chops" class="product-row-section">
+            <h2 class="row-title">Sides & Small Chops</h2>
+            <div class="product-grid">
+                <!-- Card 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1589187151032-573a91317315?auto=format&fit=crop&q=80&w=400" alt="Spicy Suya" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Spicy Beef Suya</h4>
+                        <p class="product-qty">Qty: 1 Standard Pack</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦3,500</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&q=80&w=400" alt="Garnished Plantain" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Gizdodo Special</h4>
+                        <p class="product-qty">Qty: 1 Medium Bowl</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦4,000</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&q=80&w=400" alt="Fried Plantain" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Sweet Dodo (Plantain)</h4>
+                        <p class="product-qty">Serving: 1 Portion</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦1,000</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&q=80&w=400" alt="Asun" class="product-img">
+                    <div class="product-info">
+                        <h4 class="product-name">Peppered Goat Meat (Asun)</h4>
+                        <p class="product-qty">Qty: 1 Pack</p>
+                        <div class="product-footer">
+                            <span class="product-price">₦4,500</span>
+                            <button class="add-to-cart-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+
+</main>
+<!-- Place this right under your </main> tag -->
+
+<!-- ==========================================
+     Article Section: Our Services
+     ========================================== -->
+<section class="services-articles-section">
+    <h2 class="section-title">Our Services</h2>
+    <div class="articles-container">
+        <!-- Article 1 -->
+        <article class="service-card">
+            <div class="article-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1526367790999-015078648c7e?auto=format&fit=crop&q=80&w=600" alt="Doorstep Delivery" class="article-img">
+            </div>
+            <div class="article-body">
+                <h3>Express Doorstep Delivery</h3>
+                <p>Hungry? We’ve got you covered. Get your piping hot, deliciously prepared Nigerian meals delivered right to your home or office space in record time using our swift logistic network.</p>
+            </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="service-card">
+            <div class="article-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=600" alt="Event Catering" class="article-img">
+            </div>
+            <div class="article-body">
+                <h3>Premium Event Catering</h3>
+                <p>Make your weddings, corporate meetings, and traditional celebrations unforgettable. We bring the authentic local kitchen setup to you, feeding your guests with premium, rich tastes.</p>
+            </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="service-card">
+            <div class="article-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&q=80&w=600" alt="Bulk Subscriptions" class="article-img">
+            </div>
+            <div class="article-body">
+                <h3>Weekly Bulk Soup Orders</h3>
+                <p>Save time with our custom soup bowl prep packages. Order your favorite native soups—Egusi, Efo Riro, or Afang—in large 3-5 litre containers, tailored perfectly for family weekend planning.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- ==========================================
+     Contact Us Section
+     ========================================== -->
+<section id="contact-us" class="contact-section">
+    <div class="contact-wrapper">
+        
+        <!-- Left Column: Google Map Space -->
+        <div class="map-container">
+            <!-- Using a standard clean map layout placeholder -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126846.33596160822!2d3.3323493!3d6.5243793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a3da7c4a9a!2sLagos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Right Column: Context Information & Inputs Side-by-Side -->
+        <div class="contact-form-container">
+            <h2 class="contact-title">Get In Touch With Us</h2>
+            <p class="contact-subtitle">Have questions about your order or our catering solutions? Reach out immediately.</p>
+            
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g. Chidi Obi" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="name@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" placeholder="080XXXXXXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Catering, Order Support..." required>
+                    </div>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="Write down details here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

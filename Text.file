@@ -1,0 +1,17 @@
+<!-- Prompt for MamaPutOnline -->
+
+Prompt1
+Hello Gemini, I want you to build me the navigation bar of an online take-away Nigerian cooked meal restaurant with the name MamaPutOnline. Help me generate a suitable logo and place it on the top left corner.
+Add a menu bar in dark red and or blue with sub titles like products, services, customer service, contact us.
+Add a search window on the very top right hand corner.
+Use only HTML and CSS to build this and let the IDE be visual studio code
+
+Prompt2
+moving forward with the MamaPutOnline landing page build a hero section with a call to action button. The hero section should occupy at least 30% of the vertical length of the page and 100% of the breath of the page.
+The hero section should be vertically partitioned into two, One side of the hero section should display the picture of a steaming deliciously cooked Nigerian dish/soup. The other side of the hero section should have boldly written words in large prints that reads Dive Into Delicious Meal Dishes. Use HTML and CSS still with the IDE still visual studio code. Maintain the colors used in the navigation bar
+
+Prompt3
+Gemini, in continuity of the landing page, help me build a main section which should have a side panel on the left of the main section with items listed there and connecting users to the main section/product cards. Put at least three rows on the landing page... On the right side of the side panel... with each row having at least 4 product cards. The product cards should identify the product boldly, the quantity and the price. Don’t forget to make use of only HTML and CSS, maintain the colors used in the nav bar and the hero section. IDE remains visual studio code
+
+Prompt4
+Gemini to complete our landing page project, add a footer that has all the social media handles, make the footer sticky just like the nav bar, use the color used in the nav bar for the footer. Use HTML and CSS only to do this and the IDE remains visual studio code.

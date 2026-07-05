@@ -1,0 +1,954 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B0000; /* Deep Dark Red */
+    padding: 15px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Design */
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.logo-mama {
+    color: #FFFFFF; /* White */
+}
+
+.logo-put {
+    color: #FFD700; /* Gold accent for local flavor */
+}
+
+.logo-online {
+    color: #1E90FF; /* Royal Blue */
+    font-style: italic;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    background-color: #1E90FF; /* Changes to Royal Blue on hover */
+    color: #FFFFFF;
+}
+
+.nav-links i {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+/* Dropdown Sub-menus */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFFFFF;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    color: #333333;
+    display: block;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #1E90FF;
+    color: #FFFFFF;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Search Window Styles */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container form {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 2px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.search-container form:focus-within {
+    border: 2px solid #1E90FF; /* Blue highlight when searching */
+}
+
+.search-container input[type=text] {
+    padding: 8px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-container button {
+    padding: 8px 15px;
+    background: #1E90FF; /* Royal Blue Button */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.search-container button:hover {
+    background: #0066cc;
+}
+/* ==========================================
+   Hero Section Styles 
+   ========================================== */
+.hero {
+    display: flex;
+    width: 100%; /* 100% of the breadth of the page */
+    min-height: 55vh; /* Occupies well over 30% of vertical length */
+    background-color: #fdfdfd;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Left Partition (Text Content) */
+.hero-content {
+    flex: 1;
+    padding: 50px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #8B0000; /* Main Dark Red from Navbar */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 .highlight {
+    color: #1E90FF; /* Royal Blue Accent */
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: #555555;
+    margin-bottom: 30px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #1E90FF; /* Royal Blue */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(30, 144, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #8B0000; /* Swaps to Dark Red on hover */
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.cta-button i {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover i {
+    transform: translateX(5px);
+}
+
+/* Right Partition (Image Showcase) */
+.hero-image-container {
+    flex: 1;
+    height: 100%;
+    align-self: stretch;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the space beautifully without distortion */
+}
+
+/* Subtle overlay to blend the image with the theme */
+.hero-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #fdfdfd 0%, transparent 15%);
+}
+/* ==========================================
+   Main Layout Structure
+   ========================================== */
+.main-container {
+    display: flex;
+    width: 100%;
+    padding: 40px 4%;
+    gap: 30px;
+    background-color: #fcfcfc;
+}
+
+/* ==========================================
+   Left Side Panel Styles
+   ========================================== */
+.side-panel {
+    width: 250px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 100px; /* Keeps the panel static on the left while browsing rows */
+    height: fit-content;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.side-panel h3 {
+    font-size: 1.2rem;
+    color: #333333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.category-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.category-links a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #555550;
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.category-links a:hover {
+    background-color: rgba(30, 144, 255, 0.1);
+    color: #1E90FF; /* Royal Blue hover from nav */
+}
+
+.category-links a.active {
+    background-color: #8B0000; /* Dark Red active color */
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   Right Section: Product Display & Cards
+   ========================================== */
+.products-display {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.product-row-section {
+    scroll-margin-top: 100px; /* Smooth anchor targeting */
+}
+
+.row-title {
+    font-size: 1.8rem;
+    color: #8B0000; /* Dark Red title matching navbar */
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* 4-Column Responsive Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Card Design */
+.product-card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    border: 1px solid #eeeeee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.1);
+}
+
+.product-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 6px;
+    line-height: 1.3;
+}
+
+.product-qty {
+    font-size: 0.85rem;
+    color: #777777;
+    margin-bottom: 15px;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1E90FF; /* Royal Blue bold identifier */
+}
+
+.add-to-cart-btn {
+    background-color: #8B0000; /* Dark red action item */
+    color: white;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #1E90FF; /* Turns to blue on hover state */
+}
+
+/* ==========================================
+   Our Services - Articles Layout
+   ========================================== */
+.services-articles-section {
+    padding: 60px 4%;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #8B0000; /* Deep dark red matching nav bar */
+    margin-bottom: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #1E90FF; /* Royal blue accent line */
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+.articles-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service-card {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Fluid transition configuration */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Slight hover effect requested */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(139, 0, 0, 0.12); /* Warm hue hover shadow styling */
+}
+
+.article-img-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .article-img {
+    transform: scale(1.05); /* Slight image zoom on hover */
+}
+
+.article-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.article-body h3 {
+    font-size: 1.3rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+.article-body p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   Contact Us Section Style Layout
+   ========================================== */
+.contact-section {
+    padding: 60px 4%;
+    background-color: #FFFFFF;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    background-color: #fdfdfd;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Google Map Container Partition */
+.map-container {
+    flex: 1;
+    min-height: 450px;
+    background-color: #e5e3df; /* Map fall-back background tint */
+}
+
+/* Input Fields & Text Partition */
+.contact-form-container {
+    flex: 1.2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #8B0000; /* Main Dark Red color */
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Layout for fields to sit cleanly side-by-side */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group.full-width {
+    flex: none;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Active focus using our palette themes */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border: 1px solid #1E90FF; /* Royal Blue outline */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.2);
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 14px 30px;
+    background-color: #1E90FF; /* Royal Blue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #8B0000; /* Swaps to deep red color on mouse-over */
+}
+/* ==========================================
+   Our Services - Articles Layout
+   ========================================== */
+.services-articles-section {
+    padding: 60px 4%;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #8B0000; /* Deep dark red matching nav bar */
+    margin-bottom: 40px;
+    font-weight: 800;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #1E90FF; /* Royal blue accent line */
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+.articles-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.service-card {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Fluid transition configuration */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Slight hover effect requested */
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(139, 0, 0, 0.12); /* Warm hue hover shadow styling */
+}
+
+.article-img-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .article-img {
+    transform: scale(1.05); /* Slight image zoom on hover */
+}
+
+.article-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.article-body h3 {
+    font-size: 1.3rem;
+    color: #333333;
+    font-weight: 700;
+}
+
+.article-body p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   Contact Us Section Style Layout
+   ========================================== */
+.contact-section {
+    padding: 60px 4%;
+    background-color: #FFFFFF;
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    background-color: #fdfdfd;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Google Map Container Partition */
+.map-container {
+    flex: 1;
+    min-height: 450px;
+    background-color: #e5e3df; /* Map fall-back background tint */
+}
+
+/* Input Fields & Text Partition */
+.contact-form-container {
+    flex: 1.2;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-size: 2rem;
+    color: #8B0000; /* Main Dark Red color */
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Layout for fields to sit cleanly side-by-side */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group.full-width {
+    flex: none;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444444;
+}
+
+.form-group input, 
+.form-group textarea {
+    padding: 12px 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Active focus using our palette themes */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border: 1px solid #1E90FF; /* Royal Blue outline */
+    box-shadow: 0 0 5px rgba(30, 144, 255, 0.2);
+}
+
+.submit-btn {
+    align-self: flex-start;
+    padding: 14px 30px;
+    background-color: #1E90FF; /* Royal Blue */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #8B0000; /* Swaps to deep red color on mouse-over */
+}
+
+/* ==========================================
+   Responsive Control Rules
+   ========================================== */
+@media screen and (max-width: 992px) {
+    .articles-container {
+        flex-direction: column; /* Stack articles on small screens */
+        gap: 25px;
+    }
+    
+    .contact-wrapper {
+        flex-direction: column-reverse; /* Map goes underneath form on tablets/mobiles */
+    }
+    
+    .map-container {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-row {
+        flex-direction: column; /* Stacks side-by-side inputs on tiny screens */
+        gap: 20px;
+    }
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+
+/* ==========================================
+   Responsive Control Rules
+   ========================================== */
+@media screen and (max-width: 992px) {
+    .articles-container {
+        flex-direction: column; /* Stack articles on small screens */
+        gap: 25px;
+    }
+    
+    .contact-wrapper {
+        flex-direction: column-reverse; /* Map goes underneath form on tablets/mobiles */
+    }
+    
+    .map-container {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form-row {
+        flex-direction: column; /* Stacks side-by-side inputs on tiny screens */
+        gap: 20px;
+    }
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+
+/* ==========================================
+   Responsive Adaptations
+   ========================================== */
+@media screen and (max-width: 1200px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Stack side panel on top of grid for mobile layouts */
+    }
+    
+    .side-panel {
+        width: 100%;
+        position: static;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr; /* 1 item per row on mobile */
+    }
+}
+
+/* ==========================================
+   Responsive adjustments for Mobile/Tablets
+   ========================================== */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse; /* Puts text below image on mobile */
+        min-height: auto;
+    }
+    
+    .hero-content {
+        padding: 40px 20px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+    
+    .hero-image-container {
+        height: 250px;
+        width: 100%;
+    }
+    
+    .hero-image-container::after {
+        background: linear-gradient(to top, #fdfdfd 0%, transparent 20%);
+    }
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: #700000;
+    }
+    .dropdown-menu a {
+        color: white;
+    }
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .search-container input[type=text] {
+        width: 80%;
+    }
+}
