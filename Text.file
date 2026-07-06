@@ -1,5 +1,7 @@
 <!-- Prompt for MamaPutOnline -->
 
+These are the multiple Prompts I used in achieving what I did.
+
 Prompt1
 Hello Gemini, I want you to build me the navigation bar of an online take-away Nigerian cooked meal restaurant with the name MamaPutOnline. Help me generate a suitable logo and place it on the top left corner.
 Add a menu bar in dark red and or blue with sub titles like products, services, customer service, contact us.
@@ -15,3 +17,13 @@ Gemini, in continuity of the landing page, help me build a main section which sh
 
 Prompt4
 Gemini to complete our landing page project, add a footer that has all the social media handles, make the footer sticky just like the nav bar, use the color used in the nav bar for the footer. Use HTML and CSS only to do this and the IDE remains visual studio code.
+
+
+<!-- These are the things I Engineered -->
+
+1. I changed all the images used by the artificial intelligence to images suitable for the project.
+2. Altered some of the Names used on the headers 
+3. Had to change the google map to a known location within my environment.
+4. Made sure that all the links are functional and can lead to different sections of the landing page.
+
+
