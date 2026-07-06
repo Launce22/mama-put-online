@@ -44,6 +44,26 @@ body {
     font-style: italic;
 }
 
+/* Fixed Home button */
+.top{
+  background-color: #8B0000;;
+  color: whitesmoke;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  position: fixed;
+  right: 1rem;
+  bottom: 5rem;
+  z-index: 100;
+}
+
 /* Navigation Links */
 .nav-links {
     list-style: none;
@@ -1038,11 +1058,13 @@ body {
         flex-direction: column;
         gap: 15px;
         text-align: center;
+        /* display: none; */
     }
     .nav-links {
         flex-direction: column;
         gap: 10px;
         width: 100%;
+      
     }
     .dropdown-menu {
         position: static;

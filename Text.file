@@ -25,5 +25,6 @@ Gemini to complete our landing page project, add a footer that has all the socia
 2. Altered some of the Names used on the headers 
 3. Had to change the google map to a known location within my environment.
 4. Made sure that all the links are functional and can lead to different sections of the landing page.
+5. Added a fixed home button that moves you to the top the moment you click it.
 
 
